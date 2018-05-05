@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #ffc400;
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+
+#sliderBar {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  margin: 5rem auto; }
+
+#slider {
+  z-index: 200;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer; }
+
+#mask {
+  z-index: 199;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #ffc400;
+  width: 0px;
+  height: 60px; }
+
+#dropTarget {
+  z-index: 100;
+  display: inline-block;
+  position: absolute;
+  top: 15px; }
+
+#centerLine {
+  display: inline-block;
+  height: 2px;
+  margin-top: 29px;
+  width: 220px;
+  background: linear-gradient(90deg, white 50%, transparent 50%), linear-gradient(90deg, white 50%, transparent 50%), linear-gradient(0deg, white 20%, transparent 50%), linear-gradient(0deg, white 50%, transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 15px 4px;
+  background-position: 0px 0px;
+  animation: centerLine-move 6s infinite linear; }
+
+@keyframes centerLine-move {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 300px 0px; } }
