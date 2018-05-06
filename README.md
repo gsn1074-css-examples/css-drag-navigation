@@ -1,6 +1,6 @@
 # css-drag-navigation
 
-This project show how to create drag navigation.
+This project shows how to create drag navigation.
 
 ## Development server
 
